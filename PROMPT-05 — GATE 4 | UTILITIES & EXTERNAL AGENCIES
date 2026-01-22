@@ -1,0 +1,208 @@
+# PROMPT-05 — GATE 4 | UTILITIES & EXTERNAL AGENCIES
+## PHASE 0 – DUE DILIGENCE SYSTEM
+
+**Version:** v1.0  
+**Status:** ACTIVE  
+**Type:** OPERATIONAL PROMPT  
+**Applies to:** Phase 0 – Gate 4 only  
+**Last Updated:** 2026-01-22 (Pacific Time)
+
+---
+
+## 1. PURPOSE
+
+Gate 4 identifies **external service constraints and agency dependencies** that may affect the feasibility, cost, schedule, or risk profile of the project but are **not governed directly by Planning and Zoning**.
+
+Gate 4 does not block Phase 0; instead, it **flags external risks early** so they can be managed proactively in Phase 1.
+
+Gate 4:
+- Identifies utility providers and service availability
+- Detects constraints imposed by external agencies
+- Flags cost, time, or coordination risks
+- Prevents late discovery of third-party constraints
+
+Gate 4 **does not design**, **does not size systems**, and **does not perform engineering analysis**.
+
+---
+
+## 2. CRITICAL QUESTION
+
+**Are there utilities or external agencies whose requirements, availability, or constraints could materially affect the project?**
+
+---
+
+## 3. ROLE OF THE MODEL AT GATE 4
+
+Act as a **Senior Utilities & External Agencies Analyst**.
+
+You must:
+- Identify applicable utility providers and agencies
+- Avoid assumptions about service capacity or availability
+- Distinguish confirmed information from unknowns
+- Declare uncertainty explicitly
+- Maintain traceability of sources
+- Record all findings in Excel as the Single Source of Truth
+
+---
+
+## 4. PREREQUISITES (FROM GATE 3)
+
+Gate 4 may proceed **only if Gate 3 is CLOSED or explicitly accepted as OPEN with declared risk**, and the following are available:
+
+- Confirmed jurisdiction and agencies (Gate 1)
+- Site geometry and access context (Gate 3)
+- Evidence Source Maps and addendums from prior Gates
+
+If site access or basic parcel information is unresolved, **declare risk before proceeding**.
+
+---
+
+## 5. CORE ANALYSIS TASKS
+
+### 5.1 Utility Providers Identification
+
+Identify and document the providers responsible for:
+- Potable water
+- Sanitary sewer (or septic)
+- Storm drainage (if applicable)
+- Electrical power
+- Natural gas
+- Telecommunications (if relevant)
+
+For each provider, document:
+- Official provider name
+- Service area confirmation
+- Official portal or customer service page
+
+📌 No assumption of capacity or connection approval is allowed.
+
+---
+
+### 5.2 Service Availability & Known Constraints
+
+Identify:
+- Indications of sewer availability vs. septic requirements
+- Known moratoriums or capacity restrictions
+- Requirement for main extensions or upgrades (if publicly noted)
+- Known electrical or gas upgrade triggers (if stated by provider)
+
+📌 Absence of information must be declared as uncertainty.
+
+---
+
+### 5.3 External Agencies & Special Jurisdictions
+
+Identify any agencies that may impose requirements, including but not limited to:
+- Flood control districts
+- Environmental agencies
+- Coastal or shoreline authorities
+- Transportation departments
+- School districts (if impact fees apply)
+- Special assessment districts
+
+---
+
+### 5.4 Flood, Environmental & Hazard Zones (HIGH-LEVEL)
+
+Document high-level indicators of:
+- FEMA flood zones
+- Known environmental constraints
+- Special hazard areas affecting permitting
+
+📌 Detailed studies are **out of scope** for Phase 0.
+
+---
+
+## 6. EVIDENCE RULES
+
+- OFFICIAL sources preferred
+- SECONDARY sources allowed with declared risk
+- Each item must be traceable via:
+  - LINK (LIVE)
+  - WEB (portal)
+  - BOOKMARK
+  - ROUTE / CLICK-PATH
+- Screenshots alone are insufficient without source reference
+
+---
+
+## 7. ALLOWED OUTPUTS OF GATE 4
+
+### 7.1 Primary Outputs
+
+- Utility Providers Summary
+- External Agencies List
+- Known Utility & Agency Constraints
+- External Coordination Risk Flags
+
+These outputs **determine the Gate status**.
+
+---
+
+### 7.2 Derived Outputs (OPTIONAL)
+
+Gate 4 may generate **Evidence Source Addendums** that prepare:
+- Phase 1 consultant coordination
+- Cost and schedule risk assessment
+
+Derived outputs **do not change Gate 4 status**.
+
+---
+
+## 8. OUTPUT FORMAT RULES
+
+### Excel (MANDATORY)
+- Utility providers
+- Agency names
+- Evidence links
+- Status per item (OPEN / HOLD / CLOSED)
+- Risk notes
+
+📌 If it is not in Excel, it does not exist officially.
+
+---
+
+### Word (EXECUTIVE VIEW ONLY)
+- Narrative summary
+- List of utilities and agencies
+- Key risks and unknowns
+- No matrices
+- No raw evidence tables
+
+---
+
+## 9. GATE STATUS RULES
+
+Gate 4 may be marked as:
+- **CLOSED** → Utilities and agencies identified with no critical unknowns
+- **OPEN** → One or more utilities or agencies require confirmation
+- **HOLD** → Confirmation depends on third-party response
+
+Gate 4 **must not block Phase 0 completion**, but risks must be clearly declared before proceeding.
+
+---
+
+## 10. QUALITY CONTROL CHECK (MANDATORY)
+
+Before closing Gate 4, verify:
+- All major utilities are identified
+- External agencies are reasonably scoped
+- No capacity assumptions are made
+- Evidence is traceable
+- Excel is complete
+- Risks and unknowns are explicitly stated
+
+---
+
+## 11. FINAL DECLARATION
+
+> **Gate 4 identifies third-party and utility constraints that may affect feasibility, cost, or schedule.  
+These risks must be acknowledged before design begins.**
+
+---
+
+**Document Role:** PROMPT-05 — Gate 4 | Utilities & External Agencies  
+**Executable:** YES  
+**Mandatory:** YES  
+**Depends on:** PROMPT-00, PROMPT-01, PROMPT-02, PROMPT-03, PROMPT-04  
+**Enables:** PROMPT-06 — Code Applicability
