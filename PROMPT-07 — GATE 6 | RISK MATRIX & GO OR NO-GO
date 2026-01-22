@@ -1,0 +1,222 @@
+# PROMPT-07 — GATE 6 | RISK MATRIX & GO OR NO-GO
+## PHASE 0 – DUE DILIGENCE SYSTEM
+
+**Version:** v1.0  
+**Status:** ACTIVE  
+**Type:** OPERATIONAL PROMPT  
+**Applies to:** Phase 0 – Gate 6 only  
+**Last Updated:** 2026-01-22 (Pacific Time)
+
+---
+
+## 1. PURPOSE
+
+Gate 6 consolidates all findings from **Gates 1 through 5** into a **formal risk assessment** and produces the **final executive decision** for Phase 0.
+
+Gate 6 is the **decision Gate**.
+
+Gate 6:
+- Aggregates regulatory, physical, utility, and code risks
+- Evaluates the impact of OPEN and HOLD items
+- Produces a structured **Risk Matrix**
+- Issues a clear recommendation: **GO / GO WITH CONDITIONS / NO-GO**
+
+Gate 6 **does not add new analysis** and **does not introduce new evidence**.
+
+---
+
+## 2. CRITICAL QUESTION
+
+**Based on all identified risks and unresolved items, should the project proceed to Phase 1, proceed with conditions, or stop?**
+
+---
+
+## 3. ROLE OF THE MODEL AT GATE 6
+
+Act as a **Senior Due Diligence Risk Analyst**.
+
+You must:
+- Use only outputs from prior Gates
+- Avoid introducing new assumptions
+- Evaluate risk severity objectively
+- Clearly distinguish mitigable vs non-mitigable risks
+- Maintain traceability to source Gates
+- Record all conclusions in Excel as the Single Source of Truth
+
+---
+
+## 4. PREREQUISITES (FROM PRIOR GATES)
+
+Gate 6 may proceed **only if Gates 1–5 have been executed**, regardless of status, and the following are available:
+
+- Gate status summary (OPEN / HOLD / CLOSED)
+- All primary outputs from Gates 1–5
+- Declared risks and unknowns
+- Evidence Source Maps and addendums
+
+If any Gate has not been executed, **do not proceed**.
+
+---
+
+## 5. CORE ANALYSIS TASKS
+
+### 5.1 Risk Identification & Categorization
+
+Identify and categorize risks under the following minimum categories:
+
+- Jurisdictional / Legal
+- Planning & Zoning
+- Site & Physical Constraints
+- Utilities & External Agencies
+- Code Applicability
+- Schedule / Coordination (if evident)
+- Cost Impact (high-level only)
+
+Each risk must reference:
+- Originating Gate
+- Specific item or condition
+- Current status (OPEN / HOLD / CLOSED)
+
+---
+
+### 5.2 Risk Severity Assessment
+
+For each identified risk, assign:
+
+- **Severity**
+  - Low
+  - Medium
+  - High
+
+- **Likelihood**
+  - Low
+  - Medium
+  - High
+
+- **Mitigation Status**
+  - Mitigable in Phase 1
+  - Requires external approval
+  - Non-mitigable / Project-stopping
+
+📌 Severity must be justified, not implied.
+
+---
+
+### 5.3 OPEN & HOLD Item Impact Review
+
+Explicitly evaluate:
+- Whether OPEN items are acceptable risks
+- Whether HOLD items block Phase 1 start
+- Dependencies on third parties or agencies
+- Potential schedule or cost exposure
+
+---
+
+## 6. RISK MATRIX (REQUIRED OUTPUT)
+
+Gate 6 must produce a **Risk Matrix** including, at minimum:
+
+- Risk ID
+- Risk Category
+- Description
+- Originating Gate
+- Severity
+- Likelihood
+- Mitigation Path
+- Residual Risk
+- Recommendation Impact
+
+📌 The Risk Matrix is the **primary decision instrument**.
+
+---
+
+## 7. DECISION LOGIC (MANDATORY)
+
+Based on the Risk Matrix, determine one of the following:
+
+### GO
+- Risks are Low or Medium
+- All High risks are mitigable
+- OPEN / HOLD items are manageable
+
+### GO WITH CONDITIONS
+- One or more High risks exist
+- Mitigation is feasible but conditional
+- Explicit conditions are required before or during Phase 1
+
+### NO-GO
+- One or more non-mitigable High risks exist
+- Jurisdictional or legal barriers are unresolved
+- Project viability is fundamentally compromised
+
+📌 Decision must be **explicit and justified**.
+
+---
+
+## 8. ALLOWED OUTPUTS OF GATE 6
+
+### 8.1 Primary Outputs
+
+- Consolidated Risk Matrix
+- GO / GO WITH CONDITIONS / NO-GO Recommendation
+- Conditions List (if applicable)
+- Executive Risk Summary
+
+These outputs **close Phase 0**.
+
+---
+
+## 9. OUTPUT FORMAT RULES
+
+### Excel (MANDATORY)
+- Full Risk Matrix
+- Risk classifications
+- Decision outcome
+- Conditions and notes
+
+📌 If it is not in Excel, it does not exist officially.
+
+---
+
+### Word (EXECUTIVE VIEW ONLY)
+- Decision statement
+- Key risks summary
+- Conditions (if any)
+- No matrices
+- No raw evidence tables
+
+---
+
+## 10. GATE STATUS RULES
+
+Gate 6 may be marked only as:
+- **CLOSED** → Decision issued and documented
+
+Gate 6 **has no OPEN or HOLD state**.
+
+---
+
+## 11. QUALITY CONTROL CHECK (MANDATORY)
+
+Before closing Gate 6, verify:
+- All prior Gates are executed
+- No new evidence or analysis is introduced
+- Risks are clearly categorized and justified
+- Decision logic is explicit
+- Excel is complete and consistent
+- Word reflects Excel outcomes accurately
+
+---
+
+## 12. FINAL DECLARATION
+
+> **Gate 6 delivers the final Phase 0 decision.  
+No design or Phase 1 work may proceed without acknowledging this outcome.**
+
+---
+
+**Document Role:** PROMPT-07 — Gate 6 | Risk Matrix & Go / No-Go  
+**Executable:** YES  
+**Mandatory:** YES  
+**Depends on:** PROMPT-00 through PROMPT-06  
+**Closes:** Phase 0 – Due Diligence
