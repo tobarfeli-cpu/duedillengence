@@ -1,11 +1,20 @@
 # PROMPT-07 — GATE 6 | RISK MATRIX & GO OR NO-GO
 ## PHASE 0 – DUE DILIGENCE SYSTEM
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** ACTIVE  
 **Type:** OPERATIONAL PROMPT  
 **Applies to:** Phase 0 – Gate 6 only  
-**Last Updated:** 2026-01-22 (Pacific Time)
+**Last Updated:** 2026-01-23 (Pacific Time)
+
+---
+
+## CHANGE LOG (v1.0 → v1.1)
+
+**v1.1 (2026-01-23):**
+- Added Phase 0 governance requirements (default redaction, chat verification protocol, Audit Block, and publication/order rules).
+- Added Design-to-Plan requirements and mandatory **PLAN_NOTES_MATRIX** integration.
+- Clarified that Word remains an executive narrative output and Excel remains the Single Source of Truth.
 
 ---
 
@@ -44,6 +53,35 @@ You must:
 - Record all conclusions in Excel as the Single Source of Truth
 
 ---
+
+## 3A. PHASE 0 GOVERNANCE REQUIREMENTS (MANDATORY)
+
+### 3A.1 Privacy / Redaction (Default)
+- Phase 0 deliverables (Word Master and Excel Master) must NOT include **Owner name** or **Engineer name** by default.
+- Use placeholders:
+  - **Client/Owner:** REDACTED
+  - **Engineer of Record:** REDACTED / TBD
+- Only include names when explicitly authorized in writing or when the document is marked **INTERNAL ONLY**.
+
+### 3A.2 Chat Verification Protocol (Mandatory)
+- The chat thread is a controlled verification channel.
+- Mandatory cycle: **Chat (raise/verify) → Excel Master (register) → Word Master (publish executive bullets)**.
+- No critical finding may exist only in chat.
+
+### 3A.3 Audit Block (Required for OPEN/HOLD)
+Every **OPEN** or **HOLD** item must include:
+- **LINK (LIVE)** + **WEB (domain)** + **BOOKMARK / click-path**
+- **Evidence Required** + **Result** (verifiable conclusion)
+- **Status** and **Owner (role only; no names)**
+
+### 3A.4 Publication & Ordering Rules
+- **Word** = executive view only; no large matrices.
+- **Excel** = Single Source of Truth (SSoT).
+- All outputs must list items in this order: **OPEN → HOLD → CLOSED**.
+
+### 3A.5 Design-to-Plan Bridge
+- Any item with design impact must generate/update an entry in **PLAN_NOTES_MATRIX** (Excel Master).
+- Unverified constraints must be labeled: **PENDING VERIFICATION** or **HOLD – DESIGN IMPACT**.
 
 ## 4. PREREQUISITES (FROM PRIOR GATES)
 
@@ -186,6 +224,16 @@ These outputs **close Phase 0**.
 - No raw evidence tables
 
 ---
+
+## 9A. DESIGN-TO-PLAN REQUIREMENTS (MANDATORY)
+
+For each item that affects design, permitting, or plan content:
+- Provide a **Plan Note draft** (literal text) suitable for direct placement in plans.
+- Identify **Discipline** (ARCH/STR/MEP/CIV/FIRE), target **Sheet** (A0.x/A1.0/S1.0/etc.), and **Location** (General Notes/Code Sheet/Site Plan/etc.).
+- State label: **CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT**.
+- Reference the originating **Gate Item ID** and the **Evidence Link**.
+
+📌 **PLAN_NOTES_MATRIX** in Excel Master is mandatory.
 
 ## 10. GATE STATUS RULES
 
