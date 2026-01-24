@@ -1,11 +1,20 @@
 # PROMPT-01 — GATE 0 | INTAKE & SCOPE FREEZE
 ## PHASE 0 – DUE DILIGENCE SYSTEM
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** ACTIVE  
 **Type:** OPERATIONAL PROMPT  
 **Applies to:** Phase 0 – Gate 0 only  
-**Last Updated:** 2026-01-22 (Pacific Time)
+**Last Updated:** 2026-01-23 (Pacific Time)
+
+---
+
+## CHANGE LOG (v1.0 → v1.1)
+
+**v1.1 (2026-01-23):**
+- Added Phase 0 governance requirements (default redaction, chat verification protocol, Audit Block structure).
+- Added Design-to-Plan Bridge (generic only) to ensure Phase 0 outputs feed drawing notes via Excel Master.
+- Clarified Gate 0 limitations: no real links/contacts/evidence; placeholders only.
 
 ---
 
@@ -42,6 +51,34 @@ You must:
 - Enforce strict separation between Gate 0 and Gate 1
 
 ---
+
+
+## 3A. PHASE 0 GOVERNANCE REQUIREMENTS (MANDATORY)
+
+These requirements apply to all Phase 0 execution. **Gate 0 remains pre-context** and cannot generate project-specific evidence.
+
+### Default Redaction (Privacy)
+- Phase 0 deliverables MUST NOT publish personal names for **Owner** or **Engineer** at this stage.
+- If names are provided as inputs, they may be captured for internal context but MUST be **REDACTED** in outputs.
+
+### Chat Verification Protocol (Gate 0)
+- Chat is used to confirm that required inputs are present and to prevent scope creep.
+- Gate 0 does not perform jurisdiction or regulatory verification; therefore, no real evidence is created at Gate 0.
+
+### Audit Block Structure (Placeholders Only)
+Gate 0 may define the **structure** of the evidence fields to be used in later Gates, using placeholders only:
+- LINK (LIVE): **TBD**
+- WEB (Domain): **TBD**
+- BOOKMARK / CLICK-PATH: **TBD**
+- Evidence Required: **TBD**
+- Result: **TBD**
+
+### Word vs Excel Rule (Gate 0)
+- Word output is limited to a **Scope Freeze Statement** (short narrative; no matrices).
+- Excel output may initialize **structural sheets only** (no evidence populated).
+
+### Publication Order Note
+- Gate 0 does not use OPEN/HOLD/CLOSED. This ordering rule becomes mandatory starting Gate 1: **OPEN → HOLD → CLOSED**.
 
 ## 4. REQUIRED INPUTS (PROJECT DATA)
 
@@ -137,6 +174,26 @@ Gate 0 may generate a **generic analytical framework** describing:
 
 ---
 
+
+## 7.3 Design-to-Plan Bridge (GENERIC ONLY)
+
+Gate 0 may establish the **structure** for translating Phase 0 findings into drawing-ready requirements. This is **generic** and contains **no project-specific conclusions**.
+
+Required structural setup (placeholders):
+- Excel Master sheet name: **PLAN_NOTES_MATRIX**
+- Minimum columns:
+  - Gate_Item_ID
+  - Discipline (ARCH/STR/MEP/CIV/FIRE)
+  - Sheet (A0.x / A1.0 / S1.0 / etc.)
+  - Location on Sheet (General Notes / Code Sheet / Site Plan / etc.)
+  - Plan Note (Draft Text)
+  - Status Label (CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT)
+  - Evidence Link (TBD)
+  - Owner (Role)
+  - Due Date
+
+Note: Real plan notes are produced only after verification in later Gates.
+
 ## 8. OUTPUT FORMAT RULES
 
 ### Word
@@ -190,6 +247,11 @@ Before closing Gate 0, verify:
 - Templates were treated as reference only
 
 ---
+
+
+Additional Gate 0 checks:
+- No personal names for Owner/Engineer appear in outputs (REDACTED by default).
+- Any evidence fields are placeholders only (TBD), with no real links/contacts.
 
 ## 12. FINAL DECLARATION
 
