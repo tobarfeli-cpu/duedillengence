@@ -1,0 +1,86 @@
+# PHASE 0 — OUTPUT TEMPLATES (OOE)
+## Word Master · Excel Master · Plan Notes Matrix
+
+**Version:** v1.0  
+**Status:** ACTIVE  
+**Type:** TEMPLATE PACK  
+**Last Updated:** 2026-01-23 (Pacific Time)
+
+---
+
+## 1) Audit Block (Copy/Paste Template)
+
+**Item ID:** Gx-YY (or Risk-##)  
+**Status:** OPEN / HOLD / CLOSED  
+**Finding:**  
+**Impact:**  
+**Action Required:**  
+**Owner (Role):**  
+**Due Date:**  
+
+**LINK (LIVE):**  
+**WEB (Domain/Portal):**  
+**BOOKMARK / Click-Path:**  
+
+**Evidence Required:**  
+**Result (Verified Conclusion):**  
+**Date Verified:**  
+
+**Plan Impact:** Y/N  
+**Plan Note ID:** PN-### (if Y)
+
+---
+
+## 2) Word Master (Executive) — Standard Outline
+
+1. Project Overview  
+2. Property Snapshot  
+3. Agencies & Contacts (Planning/Building/Fire)  
+4. Key Findings (by Gate)  
+5. OPEN Items (by Gate)  
+6. HOLD Items (by Gate)  
+7. CLOSED Items (high-level)  
+8. Plan Notes & Sheet Requirements (from PLAN_NOTES_MATRIX)  
+9. GO / GO WITH CONDITIONS / NO-GO Summary (Gate 6)  
+10. Next Steps & Requests (to close OPEN/HOLD)
+
+---
+
+## 3) Excel Master — Required Sheets (Minimum)
+
+- Project_Profile  
+- Property_Profile  
+- Agency_Contacts  
+- Gate_0  
+- Gate_1  
+- Gate_2  
+- Gate_3  
+- Gate_4  
+- Gate_5  
+- Gate_6  
+- Risk_Register  
+- Action_Tracker  
+- Decision_Log  
+- PLAN_NOTES_MATRIX  
+- Dictionaries  
+- Evidence_Log (optional)
+
+---
+
+## 4) PLAN_NOTES_MATRIX — Minimum Columns + Example
+
+**Columns**
+- Plan_Note_ID
+- Gate_Item_ID
+- Discipline
+- Sheet
+- Location
+- Plan_Note_Text (literal)
+- Status_Label
+- Evidence_Link
+- Notes
+
+**Example Row (format only)**
+- PN-001 | G2-05 | ARCH | A0.1 | Code / Zoning Notes | “Confirm zoning designation and overlays per [LINK]; update cover sheet accordingly.” | PENDING VERIFICATION | [LINK] | Verify in official portal
+
+---
