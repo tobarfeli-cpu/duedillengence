@@ -1,248 +1,191 @@
-# PROMPT-00 — GATE MASTER
-## PHASE 0 – DUE DILIGENCE SYSTEM
+# PHASE 0 — PROJECT INSTRUCTIONS (OOE)
+## Due Diligence System Governance
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Status:** ACTIVE  
-**Type:** MASTER / NORMATIVE  
-**Applies to:** All Phase 0 Gates  
-**Last Updated:** 2026-01-22 (Pacific Time)
+**Type:** GOVERNANCE / PROGRAM STANDARD  
+**Applies to:** Phase 0 (All Gates)  
+**Last Updated:** 2026-01-23 (Pacific Time)
+
+---
+
+## CHANGE LOG (v1.0 → v1.1)
+
+**v1.1 (2026-01-23):**
+- Added OOE Word formatting standard (header/footer, fonts, color).
+- Added standardized templates for Word Master + Excel Master + Plan Notes Matrix.
+- Clarified naming conventions and minimal-variation rules.
 
 ---
 
 ## 1. PURPOSE
 
-This document defines the mandatory master rules and philosophy governing the execution of Phase 0 – Due Diligence through a Gate-based prompt system.
-
-This prompt:
-- DOES NOT analyze projects
-- DOES NOT generate project-specific outputs
-- Governs all other Phase 0 prompts
-
-No Gate may be executed, interpreted, or closed outside the rules defined herein.
+This document governs how Phase 0 outputs are created, verified, and published. It exists to ensure:
+- Executive-ready reporting (Word Master)
+- Audit-ready traceability (Excel Master)
+- Minimal variation between runs
+- Direct usability for design teams (Plan Notes Matrix)
 
 ---
 
-## 2. PHASE 0 DEFINITION
+## 2. PHASE 0 DELIVERABLES (MANDATORY)
 
-Phase 0 is a pre-design due diligence phase intended to:
-- Reduce uncertainty
-- Identify regulatory, physical, and operational risks
-- Define the governing framework of the project
-- Enable an informed decision: GO / GO WITH CONDITIONS / NO-GO
+### 2.1 Word Master (Executive Report)
+- Professional narrative for Company + Client/Owner (**names redacted by default**)
+- No large matrices (matrices live in Excel)
+- Always ordered: **OPEN → HOLD → CLOSED**
+- Must include “What to write on plans / What to request next” for every design-impact item
 
-Phase 0 explicitly DOES NOT:
-- Design architecture
-- Design structure
-- Review plans or drawings
-- Optimize layouts or solutions
+### 2.2 Excel Master (Single Source of Truth)
+Minimum required sheets:
+- **Project_Profile**, **Property_Profile**, **Agency_Contacts**
+- **Gate_0 … Gate_6** (one sheet per gate)
+- **Risk_Register**, **Action_Tracker**, **Decision_Log**
+- **PLAN_NOTES_MATRIX**, **Dictionaries**
+- **Evidence_Log** (optional but recommended)
 
-Phase 0 explicitly DOES:
-- Define who governs the property
-- Define what is allowed before design
-- Identify constraints and risks
-- Prepare enforceable inputs for Phase 1
+📌 If it is not in Excel, it does not exist officially.
 
 ---
 
-## 3. ROLE OF THE MODEL
+## 3. OOE WORD FORMAT STANDARD (MANDATORY)
 
-The model acts as a Senior Due Diligence & Jurisdiction Analyst and must:
-- Execute analysis Gate by Gate
-- Respect the strict scope of each Gate
-- Avoid inference without sources
-- Declare risks explicitly
-- Maintain full traceability in Excel
-- Never close a Gate without meeting its minimum rule
+### 3.1 Header
+- Left: OOE logo (small)
+- Right: Presentation title (small)
 
----
+### 3.2 Footer
+- Left: file path / repository route (small)
+- Right: page number
 
-## 4. PHASE 0 PROMPT ARCHITECTURE
-
-PHASE 0 – PROMPT SYSTEM
-│
-├─ PROMPT-00 — Gate Master | Master Rules & Philosophy
-├─ PROMPT-01 — Gate 0 | Intake & Scope Freeze
-├─ PROMPT-02 — Gate 1 | Jurisdiction & Fire
-├─ PROMPT-03 — Gate 2 | Planning, Zoning & Overlays
-├─ PROMPT-04 — Gate 3 | Site & Physical Constraints
-├─ PROMPT-05 — Gate 4 | Utilities & External Agencies
-├─ PROMPT-06 — Gate 5 | Code Applicability
-├─ PROMPT-07 — Gate 6 | Risk Matrix & Go / No-Go
-
-Each prompt:
-- Is independent
-- Answers one critical question
-- Produces defined outputs only
-- Must not invade other Gates
+### 3.3 Typography & Style
+- Font: **Arial**
+- Headings: **OOE Blue** (#0A1F44)
+- Body text: black, professional spacing
+- Avoid dense tables; use bullets and short paragraphs
 
 ---
 
-## 5. NON-NEGOTIABLE PRINCIPLES
+## 4. PRIVACY / REDACTION (DEFAULT)
 
-1. One Gate = one critical question  
-2. One prompt = one decision  
-3. Evidence always prevails over opinion  
-4. Risk may be accepted, but must be declared  
-5. Phase 0 does not design  
-6. Gates must not be mixed  
-7. Outputs must not be reinterpreted across Gates  
-8. Excel is the Single Source of Truth  
-9. ChatGPT is not a repository  
-10. Word is not evidence  
+Phase 0 deliverables must NOT include:
+- Owner name
+- Engineer name (nor license/signature personal data)
 
----
+Use placeholders:
+- Client/Owner: **REDACTED**
+- Engineer of Record: **REDACTED / TBD**
 
-## 6. GATE DEFINITION
-
-A Gate is a control unit that:
-- Answers a single critical question
-- Produces a primary output
-- May produce derived outputs
-- Has explicit closure rules
-- Reduces a specific type of uncertainty
-
-A Gate is not:
-- A conversation
-- A brainstorming exercise
-- A free-form summary
+Exception: Only include names when explicitly authorized in writing or when the document is marked **INTERNAL ONLY**.
 
 ---
 
-## 7. ALLOWED STATES (MANDATORY)
+## 5. CHAT VERIFICATION PROTOCOL (MANDATORY)
 
-All Gates and items must use only the following states:
-- OPEN — Information incomplete
-- HOLD — Pending third party or external condition
-- CLOSED — Minimum Gate rule satisfied
+The chat thread is a controlled verification channel.
 
-No additional states are allowed.
+Mandatory cycle:
+1) Chat: raise item + request verification
+2) Chat: verify with evidence (Audit Block)
+3) Excel Master: register/update item (Gate sheet + trackers)
+4) Word Master: publish executive bullets (no matrices)
 
----
-
-## 8. EVIDENCE MODEL
-
-Evidence Types:
-- OFFICIAL  
-  - Primary governmental source  
-  - Allows formal closure  
-  - Mandatory only for Gate 1  
-
-- SECONDARY  
-  - GIS, auxiliary portals, unofficial viewers  
-  - Allows progress with declared risk  
-  - Never allows Gate 1 closure  
+No critical finding may exist only in chat.
 
 ---
 
-## 9. FAST-TRACK RULE
+## 6. AUDIT BLOCK (REQUIRED FOR OPEN/HOLD)
 
-Only Gate 1 requires OFFICIAL evidence to close.
-
-All other Gates may:
-- Advance with secondary evidence
-- Remain OPEN or HOLD
-- Explicitly declare risk
-
-This enables speed without loss of control.
-
----
-
-## 10. PRIMARY VS DERIVED OUTPUTS
-
-Primary Output:
-- Answers the Gate question
-- Determines the Gate state
-- Must be recorded in Excel
-
-Derived Output:
-- Does not affect the originating Gate state
-- Feeds subsequent Gates
-- Must be recorded in Excel
-- Does not constitute project evidence by itself
+Every OPEN or HOLD item must include:
+- **LINK (LIVE)**
+- **WEB (domain)**
+- **BOOKMARK / click-path**
+- **Evidence Required** (what validates)
+- **Result** (verifiable conclusion)
+- **Status** and **Owner (role only; no names)**
 
 ---
 
-## 11. CRITICAL DELIMITATION: GATE 0 VS GATE 1
+## 7. JURISDICTION RULE (NON-NEGOTIABLE)
 
-Gate 0 (Strictly Limited):
-- Does NOT know the real jurisdiction
-- Does NOT generate real links
-- Does NOT generate contacts
-- Does NOT generate evidence
-- Only defines the project, freezes scope, and establishes a generic framework
-
-Gate 1 (First Contextual Gate):
-- Confirms real jurisdiction
-- Identifies governing authorities
-- Produces official contact information
-- Produces real evidence links and routes
-- Controls the primary legal risk
+Jurisdiction SHALL NOT be determined by postal address.
+Jurisdiction must be confirmed via official sources and documented with an Audit Block.
 
 ---
 
-## 12. TOOL ARCHITECTURE
+## 8. PUBLICATION ORDER (MANDATORY)
 
-ChatGPT — Analysis, reasoning, generation  
-Excel — Information, evidence, states  
-Word — Executive summary  
-Repository — Governance, versioning, audit  
-
-If it is not in Excel, it does not officially exist.
+All outputs (Word and Excel views) must list items in this order:
+1) **OPEN**
+2) **HOLD**
+3) **CLOSED**
 
 ---
 
-## 13. CHATGPT EXECUTION RULES
+## 9. DESIGN-TO-PLAN REQUIREMENT (MANDATORY)
 
-- One ChatGPT Project per project
-- One chat per Gate
-- One prompt per Gate
-- Prompts versioned outside ChatGPT
+If an item affects design, permitting, or plan content, it SHALL:
+- Generate/update an entry in **PLAN_NOTES_MATRIX** (Excel Master)
+- Provide a Plan Note draft (literal text) with:
+  - Discipline (ARCH/STR/MEP/CIV/FIRE)
+  - Target sheet and location
+  - Label: **CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT**
+  - Evidence link
+  - Originating Gate Item ID
 
-ChatGPT is a temporary workspace, not the official record.
-
----
-
-## 14. QA / AUDIT CRITERIA
-
-A Gate is valid only if:
-- Its critical question is answered
-- It does not invade other Gates
-- Only its defined outputs are produced
-- All data is recorded in Excel
-- Risks and open items are declared
+Unverified items must be labeled and tracked; information must not be invented.
 
 ---
 
-## 15. PROHIBITED ACTIONS
+## 10. STANDARD TEMPLATES (MINIMAL VARIATION)
 
-NO design  
-NO plan review  
-NO jurisdiction inference  
-NO Gate closure without minimum evidence  
-NO moving information across Gates  
-NO using ChatGPT as a repository  
+### 10.1 Word Master — Standard Outline
+1) Project Overview (Address, Scope, Project ID)
+2) Property Snapshot (APN, zoning, lot area, year built, occupancy group — if available)
+3) Agencies & Contacts (Planning / Building / Fire + phone/email/portal)
+4) Key Findings (by Gate, short bullets)
+5) OPEN Items (by Gate, bullets with Audit Block references)
+6) HOLD Items (by Gate, bullets with Audit Block references)
+7) CLOSED Items (high-level bullets; no evidence tables)
+8) Plan Notes & Sheet Requirements (pulled from PLAN_NOTES_MATRIX)
+9) GO / GO WITH CONDITIONS / NO-GO Summary (Gate 6 output)
+10) Next Steps & Requests (what must be obtained to close OPEN/HOLD)
+
+### 10.2 Excel Master — Minimum Column Set (Gate sheets)
+- Item_ID, Gate, Category, Status
+- Finding, Impact, Risk_Level
+- Action_Required, Owner_Role, Due_Date
+- LINK_LIVE, WEB_Domain, BOOKMARK_ClickPath
+- Evidence_Required, Result_Summary, Date_Verified
+- Plan_Impact (Y/N), Plan_Note_ID (if applicable)
+
+### 10.3 PLAN_NOTES_MATRIX — Minimum Columns
+- Plan_Note_ID
+- Gate_Item_ID
+- Discipline (ARCH/STR/MEP/CIV/FIRE)
+- Sheet (A0.x / A1.0 / S1.0 / etc.)
+- Location (General Notes / Code Sheet / Site Plan / etc.)
+- Plan_Note_Text (literal)
+- Status_Label (CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT)
+- Evidence_Link
+- Notes
 
 ---
 
-## 16. PHASE 0 FINAL VERIFICATION
+## 11. NAMING CONVENTIONS (RECOMMENDED)
 
-Before closing Phase 0, confirm that:
-- All Gates were executed
-- Excel is complete and consistent
-- Word is summary-only
-- Risks are declared
-- GO / NO-GO decision is documented
+- Word Master: `OOE-PHASE0-<ProjectID>-WordMaster-vX.Y.docx`
+- Excel Master: `OOE-PHASE0-<ProjectID>-ExcelMaster-vX.Y.xlsx`
+- Prompts: `PROMPT-0X—...—vX.Y.md`
 
 ---
 
-## 17. FINAL DECLARATION
+## 12. CHANGE CONTROL
 
-This Gate Master governs the entire Phase 0 system.  
-No Gate may be executed, closed, or interpreted outside these rules.
+Any change in a verified constraint must update:
+- Excel Master (item, evidence, status)
+- PLAN_NOTES_MATRIX (if applicable)
+- Word Master (executive bullets)
+- Project Change Log (what changed and why)
 
 ---
-
-Document Role: PROMPT-00 — Gate Master  
-Executable: NO  
-Mandatory: YES  
-Foundation for: SOP · Gate Prompts · Excel · Word
