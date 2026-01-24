@@ -1,10 +1,10 @@
-# PHASE 0 — PROJECT INSTRUCTIONS (OOE)
-## Due Diligence System Governance
+# PHASE 0 — GATE MASTER (OOE)
+## Due Diligence Execution Standard
 
 **Version:** v1.1  
 **Status:** ACTIVE  
-**Type:** GOVERNANCE / PROGRAM STANDARD  
-**Applies to:** Phase 0 (All Gates)  
+**Type:** OPERATIONAL STANDARD  
+**Applies to:** Phase 0 (Gates 0–6)  
 **Last Updated:** 2026-01-23 (Pacific Time)
 
 ---
@@ -12,180 +12,86 @@
 ## CHANGE LOG (v1.0 → v1.1)
 
 **v1.1 (2026-01-23):**
-- Added OOE Word formatting standard (header/footer, fonts, color).
-- Added standardized templates for Word Master + Excel Master + Plan Notes Matrix.
-- Clarified naming conventions and minimal-variation rules.
+- Added mandatory Plan Notes Matrix integration across all Gates.
+- Added minimal-variation templates and definition of done controls.
+- Aligned governance rules (redaction, chat verification, ordering) with operational prompts.
 
 ---
 
 ## 1. PURPOSE
 
-This document governs how Phase 0 outputs are created, verified, and published. It exists to ensure:
-- Executive-ready reporting (Word Master)
-- Audit-ready traceability (Excel Master)
-- Minimal variation between runs
-- Direct usability for design teams (Plan Notes Matrix)
+Gate Master defines:
+- Execution boundaries for each Gate
+- Minimum required outputs
+- Definition of Done (DoD)
+- Publication rules (Word vs Excel)
+- Integration requirements (Risk Register, Action Tracker, Plan Notes Matrix)
 
 ---
 
-## 2. PHASE 0 DELIVERABLES (MANDATORY)
+## 2. GENERAL RULES (MANDATORY)
 
-### 2.1 Word Master (Executive Report)
-- Professional narrative for Company + Client/Owner (**names redacted by default**)
-- No large matrices (matrices live in Excel)
-- Always ordered: **OPEN → HOLD → CLOSED**
-- Must include “What to write on plans / What to request next” for every design-impact item
-
-### 2.2 Excel Master (Single Source of Truth)
-Minimum required sheets:
-- **Project_Profile**, **Property_Profile**, **Agency_Contacts**
-- **Gate_0 … Gate_6** (one sheet per gate)
-- **Risk_Register**, **Action_Tracker**, **Decision_Log**
-- **PLAN_NOTES_MATRIX**, **Dictionaries**
-- **Evidence_Log** (optional but recommended)
-
-📌 If it is not in Excel, it does not exist officially.
+- Excel is the Single Source of Truth (SSoT).
+- Word is executive-only; no large matrices.
+- Items must be ordered: OPEN → HOLD → CLOSED.
+- OPEN/HOLD require Audit Block (Link/Web/Bookmark/Evidence Required/Result).
+- Owner/Engineer names are redacted by default.
+- If an item impacts plans, it MUST create/update PLAN_NOTES_MATRIX.
 
 ---
 
-## 3. OOE WORD FORMAT STANDARD (MANDATORY)
+## 3. ITEM STANDARD (EXCEL — REQUIRED FIELDS)
 
-### 3.1 Header
-- Left: OOE logo (small)
-- Right: Presentation title (small)
-
-### 3.2 Footer
-- Left: file path / repository route (small)
-- Right: page number
-
-### 3.3 Typography & Style
-- Font: **Arial**
-- Headings: **OOE Blue** (#0A1F44)
-- Body text: black, professional spacing
-- Avoid dense tables; use bullets and short paragraphs
-
----
-
-## 4. PRIVACY / REDACTION (DEFAULT)
-
-Phase 0 deliverables must NOT include:
-- Owner name
-- Engineer name (nor license/signature personal data)
-
-Use placeholders:
-- Client/Owner: **REDACTED**
-- Engineer of Record: **REDACTED / TBD**
-
-Exception: Only include names when explicitly authorized in writing or when the document is marked **INTERNAL ONLY**.
-
----
-
-## 5. CHAT VERIFICATION PROTOCOL (MANDATORY)
-
-The chat thread is a controlled verification channel.
-
-Mandatory cycle:
-1) Chat: raise item + request verification
-2) Chat: verify with evidence (Audit Block)
-3) Excel Master: register/update item (Gate sheet + trackers)
-4) Word Master: publish executive bullets (no matrices)
-
-No critical finding may exist only in chat.
-
----
-
-## 6. AUDIT BLOCK (REQUIRED FOR OPEN/HOLD)
-
-Every OPEN or HOLD item must include:
-- **LINK (LIVE)**
-- **WEB (domain)**
-- **BOOKMARK / click-path**
-- **Evidence Required** (what validates)
-- **Result** (verifiable conclusion)
-- **Status** and **Owner (role only; no names)**
-
----
-
-## 7. JURISDICTION RULE (NON-NEGOTIABLE)
-
-Jurisdiction SHALL NOT be determined by postal address.
-Jurisdiction must be confirmed via official sources and documented with an Audit Block.
-
----
-
-## 8. PUBLICATION ORDER (MANDATORY)
-
-All outputs (Word and Excel views) must list items in this order:
-1) **OPEN**
-2) **HOLD**
-3) **CLOSED**
-
----
-
-## 9. DESIGN-TO-PLAN REQUIREMENT (MANDATORY)
-
-If an item affects design, permitting, or plan content, it SHALL:
-- Generate/update an entry in **PLAN_NOTES_MATRIX** (Excel Master)
-- Provide a Plan Note draft (literal text) with:
-  - Discipline (ARCH/STR/MEP/CIV/FIRE)
-  - Target sheet and location
-  - Label: **CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT**
-  - Evidence link
-  - Originating Gate Item ID
-
-Unverified items must be labeled and tracked; information must not be invented.
-
----
-
-## 10. STANDARD TEMPLATES (MINIMAL VARIATION)
-
-### 10.1 Word Master — Standard Outline
-1) Project Overview (Address, Scope, Project ID)
-2) Property Snapshot (APN, zoning, lot area, year built, occupancy group — if available)
-3) Agencies & Contacts (Planning / Building / Fire + phone/email/portal)
-4) Key Findings (by Gate, short bullets)
-5) OPEN Items (by Gate, bullets with Audit Block references)
-6) HOLD Items (by Gate, bullets with Audit Block references)
-7) CLOSED Items (high-level bullets; no evidence tables)
-8) Plan Notes & Sheet Requirements (pulled from PLAN_NOTES_MATRIX)
-9) GO / GO WITH CONDITIONS / NO-GO Summary (Gate 6 output)
-10) Next Steps & Requests (what must be obtained to close OPEN/HOLD)
-
-### 10.2 Excel Master — Minimum Column Set (Gate sheets)
-- Item_ID, Gate, Category, Status
+Every Gate item must include, at minimum:
+- Item_ID, Gate, Category, Status (OPEN/HOLD/CLOSED)
 - Finding, Impact, Risk_Level
 - Action_Required, Owner_Role, Due_Date
-- LINK_LIVE, WEB_Domain, BOOKMARK_ClickPath
+- LINK_LIVE, WEB_Domain, BOOKMARK_or_ClickPath
 - Evidence_Required, Result_Summary, Date_Verified
 - Plan_Impact (Y/N), Plan_Note_ID (if applicable)
 
-### 10.3 PLAN_NOTES_MATRIX — Minimum Columns
-- Plan_Note_ID
-- Gate_Item_ID
-- Discipline (ARCH/STR/MEP/CIV/FIRE)
-- Sheet (A0.x / A1.0 / S1.0 / etc.)
-- Location (General Notes / Code Sheet / Site Plan / etc.)
-- Plan_Note_Text (literal)
-- Status_Label (CONFIRMED / PENDING VERIFICATION / HOLD – DESIGN IMPACT)
-- Evidence_Link
-- Notes
+---
+
+## 4. PUBLICATION STANDARD (WORD)
+
+Per Gate, Word Master publishes ONLY:
+- Key Findings (bullets)
+- OPEN items (bullets with Item_ID)
+- HOLD items (bullets with Item_ID)
+- CLOSED items (short bullets with Item_ID)
+
+Evidence matrices remain exclusively in Excel Master.
 
 ---
 
-## 11. NAMING CONVENTIONS (RECOMMENDED)
+## 5. DESIGN-TO-PLAN STANDARD (MANDATORY)
 
-- Word Master: `OOE-PHASE0-<ProjectID>-WordMaster-vX.Y.docx`
-- Excel Master: `OOE-PHASE0-<ProjectID>-ExcelMaster-vX.Y.xlsx`
-- Prompts: `PROMPT-0X—...—vX.Y.md`
+If an item affects design, permitting, or plan content:
+- Create/update PLAN_NOTES_MATRIX entry with:
+  - Gate_Item_ID, Discipline, Sheet, Location, Plan Note (literal), Status label, Evidence link
+- If not verified, label as PENDING VERIFICATION or HOLD – DESIGN IMPACT.
 
 ---
 
-## 12. CHANGE CONTROL
+## 6. DEFINITION OF DONE (DoD) — FOR ANY GATE
 
-Any change in a verified constraint must update:
-- Excel Master (item, evidence, status)
-- PLAN_NOTES_MATRIX (if applicable)
-- Word Master (executive bullets)
-- Project Change Log (what changed and why)
+A Gate is DONE only if:
+- All OPEN/HOLD items include Audit Block
+- Owners are assigned (roles)
+- Plan Notes updated for design-impact items
+- Word executive bullets updated
+- Excel Master updated and internally consistent
+
+---
+
+## 7. GATE SEQUENCE & DEPENDENCIES (SUMMARY)
+
+- Gate 0: Scope Freeze & Inputs (enables Gate 1)
+- Gate 1: Jurisdiction & Agencies (enables Gates 2–6)
+- Gate 2: Planning/Zoning/Overlays (enables Gate 3)
+- Gate 3: Site & Physical Constraints (enables Gate 4)
+- Gate 4: Utilities & External Agencies (enables Gate 5)
+- Gate 5: Code Applicability (enables Gate 6)
+- Gate 6: Risk Matrix & Go / No-Go (closes Phase 0)
 
 ---
